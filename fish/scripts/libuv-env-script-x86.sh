@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt install -y autoconf automake libtool
+sudo apt-get install -y autoconf automake libtool
 
 APP_DIR=../../app
 
