@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo apt install -y autoconf automake libtool
+
 APP_DIR=../../app
 
 git clone https://github.com/libuv/libuv
