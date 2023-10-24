@@ -1,5 +1,5 @@
 CXX = ccache g++
-OUTPUT_FILE=fish
+OUTPUT_FILE=bin/fish
 
 define INCLUDE
 	v8/include/
@@ -10,7 +10,7 @@ define INCLUDEUV
 endef
 
 define APP
-	app/index.cc
+	app/index.cpp
 endef
 
 define OBJ
@@ -29,8 +29,8 @@ export APP
 
 
 build:
+	mkdir -p bin
 	$(CXX) $$APP -I $$INCLUDE -I $$INCLUDEUV  -std=c++17 -pthread -o $$OUTPUT_FILE -DV8_COMPRESS_POINTERS $$OBJ -Wl,--no-as-needed -ldl
 
 clean:
-		rm -f hello_uv
-		rm -f myapp
+	rm -rf bin

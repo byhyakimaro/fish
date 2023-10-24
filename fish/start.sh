@@ -10,4 +10,4 @@ then
 fi
 
 
-nodemon -e cc,h,js,cpp,hpp --exec "make && ./fish index.js"
+nodemon -e cc,h,js,cpp,hpp --exec "make && ./bin/fish index.js"
