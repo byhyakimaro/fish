@@ -1,5 +1,5 @@
 apt-get install -y curl \
-  ccache cmake nodejs python3 pkg-config ninja-build time && npm i -g nodemon
+  ccache cmake nodejs python3 pkg-config ninja-build time npm && npm i -g nodemon
 
 # cmake --version
 # # cmake version 3.24.1

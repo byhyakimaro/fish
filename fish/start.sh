@@ -6,7 +6,7 @@ fi
 
 if ! command -v "ccache" /dev/null
 then
-  sudo apt-get install -y ccache
+  apt-get install -y ccache
 fi
 
 
