@@ -1,15 +1,6 @@
 apt-get install -y curl \
   ccache cmake nodejs python3 pkg-config ninja-build time && npm i -g nodemon
 
-# ccache --version
-# # ccache version 4.6.3
-
-# ccache g++ --version
-# # Apple clang version 13.1.6 (clang-1316.0.21.2.5)
-# # Target: arm64-apple-darwin21.6.0
-# # Thread model: posix
-# # InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-
 # cmake --version
 # # cmake version 3.24.1
 
@@ -62,11 +53,9 @@ EOF
 
 time ninja -C out.gn/x64.release.sample v8_monolith
 
-# cp out.gn/x64.release.sample/obj/libv8_monolith.a ../../../v8/
-# cp out.gn/x64.release.sample/icudtl.dat ../../../v8/
-# cp -r include ../../../v8/
+mkdir ../../../v8
+cp out.gn/x64.release.sample/obj/*.a ../../../v8/
+cp -r include ../../../v8/
 
-# # clean up
-# cd ../../
-# rm -rf v8
-# rm -rf depot_tools
+# clean up
+cd ../../../ && rm -rf depot_tools lib
