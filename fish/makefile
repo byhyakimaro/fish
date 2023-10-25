@@ -15,7 +15,7 @@ endef
 
 define OBJ
 	v8/libv8_monolith.a
-	libuv/libuv-x86_64.a
+	libuv/.libs/libuv.a
 endef
 
 export INCLUDE
