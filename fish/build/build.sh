@@ -1,0 +1,1 @@
+sh ./build/libuv-env-script-x64.sh && sh ./build/v8-env-script-x64.sh
