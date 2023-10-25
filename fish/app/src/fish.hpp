@@ -53,7 +53,7 @@ private:
         }
     }
 
-    static void Log(const v8::FunctionCallbackInfo<v8::Value> &args)
+    static void LogHook(const v8::FunctionCallbackInfo<v8::Value> &args)
     {
 
         bool first = true;
@@ -107,7 +107,7 @@ public:
         v8::Local<v8::ObjectTemplate> global = v8::ObjectTemplate::New(isolate);
         // Bind the global 'print' function to the C++ Print callback.
 
-        global->Set(isolate, "log", v8::FunctionTemplate::New(isolate, Log));
+        global->Set(isolate, "loghook", v8::FunctionTemplate::New(isolate, LogHook));
 
         // Create a new context.
         this->context = v8::Context::New(this->isolate, NULL, global);
