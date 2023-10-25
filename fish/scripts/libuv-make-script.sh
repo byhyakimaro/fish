@@ -9,3 +9,5 @@ sh autogen.sh
 make
 make check
 make install
+
+find . -mindepth 1 -maxdepth 1 ! -name '.' ! -name '..' ! -name 'include' ! -name '.libs' -exec rm -r {} +
