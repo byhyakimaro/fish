@@ -32,6 +32,7 @@ is_component_build = false
 is_clang = true
 v8_static_library = true
 v8_monolithic = true
+v8_enable_sandbox = true
 v8_use_external_startup_data = false
 v8_enable_test_features = false
 v8_enable_i18n_support = false
@@ -41,7 +42,7 @@ EOF
 
 # # echo 'v8_target_cpu = "arm64"' >> out.gn/x64.release.sample/args.gn
 # echo 'cc_wrapper="ccache"' >> out.gn/x64.release.sample/args.gn
-sed -ie '/v8_enable_sandbox/d' out.gn/x64.release.sample/args.gn
+# sed -ie '/v8_enable_sandbox/d' out.gn/x64.release.sample/args.gn
 
 # export CCACHE_CPP2=yes
 # export CCACHE_SLOPPINESS=time_macros
