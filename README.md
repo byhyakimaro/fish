@@ -1,6 +1,6 @@
 # Fish: Um Novo Runtime JavaScript Multithread Nativo
 
-<img src="https://github.com/byhyakimaro/fish/blob/main/fish.png">
+<img width="200" src="https://github.com/byhyakimaro/fish/blob/main/fish.png">
 
 ## Visão Geral
 
