@@ -4,7 +4,7 @@
 
 ## Visão Geral
 
-Fish é um runtime JavaScript, trazendo uma capacidade multithread nativa a qualquer tarefa com gerenciamento inteligente de memoria, aliada à eficiência do motor V8 do Google Chrome e à biblioteca de I/O assíncrona Libuv em C++ e JavaScript. Este runtime é construído para proporcionar uma experiência de desenvolvimento, maximizando a performance e a escalabilidade das aplicações JavaScript.
+Fish é um runtime open-source JavaScript, trazendo uma capacidade multithread nativa a qualquer tarefa com gerenciamento inteligente de memoria, aliada à eficiência do motor V8 do Google Chrome e à biblioteca de I/O assíncrona Libuv em C++ e JavaScript. Este runtime é construído para proporcionar uma experiência de desenvolvimento, maximizando a performance e a escalabilidade das aplicações JavaScript.
 
 ## Funcionalidades Principais
 
