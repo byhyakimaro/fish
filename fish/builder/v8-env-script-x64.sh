@@ -22,10 +22,6 @@ cd v8
 tools/dev/v8gen.py list
 tools/dev/v8gen.py x64.release.sample -vv
 
-# # echo 'v8_target_cpu = "arm64"' >> out.gn/x64.release.sample/args.gn
-# sed -ie '/v8_enable_sandbox/d' out.gn/x64.release.sample/args.gn
-# echo 'cc_wrapper="ccache"' >> out.gn/x64.release.sample/args.gn
-
 cat <<EOF > "out.gn/x64.release.sample/args.gn"
 target_os = "linux"
 is_debug = false
@@ -42,6 +38,10 @@ v8_enable_i18n_support = false
 treat_warnings_as_errors = false
 symbol_level = 0
 EOF
+
+# # echo 'v8_target_cpu = "arm64"' >> out.gn/x64.release.sample/args.gn
+# echo 'cc_wrapper="ccache"' >> out.gn/x64.release.sample/args.gn
+sed -ie '/v8_enable_sandbox/d' out.gn/x64.release.sample/args.gn
 
 # export CCACHE_CPP2=yes
 # export CCACHE_SLOPPINESS=time_macros
