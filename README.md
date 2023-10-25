@@ -36,7 +36,7 @@ Para mais detalhes sobre como iniciar, consulte nossa [documentação](https://f
 
 Junte-se à comunidade Fish para explorar e discutir as possibilidades multithread, bem como colaborar com outros desenvolvedores:
 
-- [Discord](https://discord.gg/fishjs)
+- [Discord](https://discord.gg/nyzPFhSUgD)
 
 Estamos ansiosos para ver como o Fish e suas funcionalidades multithread nativas vão transformar suas aplicações JavaScript!
 
