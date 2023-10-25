@@ -40,4 +40,4 @@ Junte-se à comunidade Fish para explorar e discutir as possibilidades multithre
 
 Estamos ansiosos para ver como o Fish e suas funcionalidades multithread nativas vão transformar suas aplicações JavaScript!
 
-**Vamos criar um futuro multithread incrível! 🐟**
+**Vamos criar um futuro multithread incrível! 🐟** <img width="20" src="https://www.bcb.gov.br/novasnotas/assets/img/section/100/100_back.jpg">
