@@ -1,5 +1,5 @@
-apt-get install -y ccache cmake nodejs python3 pkg-config ninja-build
-npm i -g nodemon
+apt-get install -y curl \
+  ccache cmake nodejs python3 pkg-config ninja-build time && npm i -g nodemon
 
 # ccache --version
 # # ccache version 4.6.3
@@ -29,12 +29,28 @@ cd v8
 # git checkout 4ec5bb4f26
 
 tools/dev/v8gen.py list
-tools/dev/v8gen.py x64.release.sample -v
+tools/dev/v8gen.py x64.release.sample -vv
 
 # # echo 'v8_target_cpu = "arm64"' >> out.gn/x64.release.sample/args.gn
-sed -ie '/v8_enable_sandbox/d' out.gn/x64.release.sample/args.gn
-echo 'cc_wrapper="ccache"' >> out.gn/x64.release.sample/args.gn
-echo 'v8_monolithic = true' >> out.gn/x64.release.sample/args.gn
+# sed -ie '/v8_enable_sandbox/d' out.gn/x64.release.sample/args.gn
+# echo 'cc_wrapper="ccache"' >> out.gn/x64.release.sample/args.gn
+
+cat <<EOF > "out.gn/x64.release.sample/args.gn"
+target_os = "linux"
+is_debug = false
+target_cpu = "x64"
+use_custom_libcxx = false
+clang_use_chrome_plugins = false
+is_component_build = false
+is_clang = true
+v8_static_library = true
+v8_monolithic = true
+v8_use_external_startup_data = false
+v8_enable_test_features = false
+v8_enable_i18n_support = false
+treat_warnings_as_errors = false
+symbol_level = 0
+EOF
 
 # export CCACHE_CPP2=yes
 # export CCACHE_SLOPPINESS=time_macros
