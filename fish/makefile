@@ -14,7 +14,7 @@ define APP
 endef
 
 define OBJ
-	v8/libv8_monolith.a
+	v8/.libs/libv8_monolith.a
 	libuv/.libs/libuv.a
 endef
 

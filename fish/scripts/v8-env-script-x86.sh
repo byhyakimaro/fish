@@ -54,7 +54,7 @@ EOF
 time ninja -C out.gn/x64.release.sample v8_monolith
 
 mkdir ../../../v8
-cp out.gn/x64.release.sample/obj/*.a ../../../v8/
+cp out.gn/x64.release.sample/obj/*.a ../../../v8/.libs
 cp -r include ../../../v8/
 
 # clean up
