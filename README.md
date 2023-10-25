@@ -27,7 +27,7 @@ Estamos entusiasmados para receber contribuições da comunidade! Se você está
 Para começar a utilizar a capacidade multithread do Fish, basta instalar a última versão e começar a experimentar com suas aplicações. O Fish facilita a criação de aplicações JavaScript altamente eficientes e responsivas em ambientes multithread.
 
 ```bash
-apt install fish-runtime
+fish index.js
 ```
 
 Para mais detalhes sobre como iniciar, consulte nossa [documentação](https://fishjs.org/docs).
