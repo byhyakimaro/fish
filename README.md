@@ -1,4 +1,4 @@
-# Fish: Um Novo Runtime JavaScript Multithread Nativo com V8 e Libuv
+# Fish: Um Novo Runtime JavaScript Multithread Nativo
 
 <img src="https://github.com/byhyakimaro/fish/blob/main/fish.png">
 
