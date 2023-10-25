@@ -4,3 +4,5 @@ if you wanna compile binaries it by yourself, I left some scripts in case you wa
 
 - [Installing libuv](./fish/scripts/libuv-env-script-x86.sh)
 - [Installing v8](./fish/scripts/v8-env-script-x86.sh)
+
+<img src="https://github.com/byhyakimaro/fish/blob/main/fish.jpg">
