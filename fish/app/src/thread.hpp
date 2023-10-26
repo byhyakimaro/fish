@@ -27,7 +27,7 @@ public:
     {
       counter--;
       fprintf(stderr, ".\n");
-      uv_sleep(100);
+      // uv_sleep(100);
     }
     fprintf(stderr, "Thread done run!");
   }
