@@ -4,6 +4,7 @@
 
 #include "./fs.hpp"
 #include "./util.hpp"
+#include "./thread.hpp"
 
 uv_loop_t *DEFAULT_LOOP = uv_default_loop();
 
@@ -108,6 +109,7 @@ public:
         // Bind the global 'print' function to the C++ Print callback.
 
         global->Set(isolate, "debug", v8::FunctionTemplate::New(isolate, Debug));
+        global->Set(isolate, "thread", v8::FunctionTemplate::New(isolate, ThreadTimeOut::Thread));
 
         // Create a new context.
         this->context = v8::Context::New(this->isolate, NULL, global);

@@ -1,1 +1,3 @@
-log('hello world fish runtime')
+debug('hello world fish runtime');
+
+thread(10);
